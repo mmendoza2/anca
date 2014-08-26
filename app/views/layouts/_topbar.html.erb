@@ -9,9 +9,9 @@
             </div>
             <%	 if loc['results'][0].nil? %>
             <%	 else %>
-                <div class="col-md-8 col-sm-8" style="padding-top: 15px; margin-bottom: -45px" >
-                  <h2 style="color: black"> <%= loc['results'][0]['address_components'][0]['short_name']  %> </h2>
-                </div>
+            <div class="col-md-8 col-sm-8" style="padding-top: 15px" >
+              <h2 style="color: black"> <%= loc['results'][0]['address_components'][0]['short_name']  %> </h2>
+            </div>
             <%	 end %>
         </div>
         <ul class="nav " style="margin-right: 5%; padding-top: 10px">
