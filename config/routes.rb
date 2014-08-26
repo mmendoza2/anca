@@ -25,9 +25,9 @@ Anca::Application.routes.draw do
   match '/contacto', to: 'info#contacto', via: 'get'
   match '/instrucciones', to: 'limbo#instrucciones', via: 'get'
   match '/micrositios', to: 'micrositios#index', via: 'get'
-  match '/actividades/nightclubs', to: 'actividades#show', defaults: {:id => '1'}, via: 'get'
-  match '/actividades/bars', to: 'actividades#show', defaults: {:id => '2'}, via: 'get'
-  match '/actividades/restaurants', to: 'actividades#show', defaults: {:id => '3'}, via: 'get'
+  match '/actividades/camiones', to: 'actividades#show', defaults: {:id => '1'}, via: 'get'
+  match '/actividades/autos', to: 'actividades#show', defaults: {:id => '2'}, via: 'get'
+  match '/actividades/autosdeportivos', to: 'actividades#show', defaults: {:id => '3'}, via: 'get'
 
 
 
