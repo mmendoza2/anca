@@ -3,19 +3,63 @@
         <script type="text/javascript">
             window.location.href="/location"  // put your correct path in a string here
         </script>
+
     <% else %>
+        <div class="col-xs-12 col-md-6 col-md-offset-3 ">
+          <div class="row border  ">
+            <div class="row ">
+              <div class="col-md-10">
+                <h4> El usuario Miguel agregó este nuevo auto</h4>
+              </div>
+              <div>
+                <%= image_tag "auto2.jpg", class: " img-responsive ", style: "width: 380px"   %>
+              </div>
+            </div>
+          </div>
+          <div class="row border  ">
+            <div class="row ">
+              <div class="col-md-10">
+                <h4> El usuario Maciel agregó este nuevo auto</h4>
+              </div>
+              <div>
+                <%= image_tag "auto1.jpg", class: "  img-responsive ", style: "width: 380px"   %>
+              </div>
+            </div>
+          </div>
+          <div class="row border  ">
+            <div class="row ">
+              <div class="col-md-10">
+                <h4> El usuario David Jose agregó este nuevo auto</h4>
+              </div>
+              <div>
+                <%= image_tag "auto3.jpeg", class: " img-responsive ", style: "width: 380px" %>
+              </div>
+            </div>
+          </div>
+          <div class="row border  ">
+            <div class="row ">
+              <div class="col-md-10">
+                <h4> El usuario AndresM agregó este nuevo auto</h4>
+              </div>
+              <div>
+                <%= image_tag "auto4.jpeg", class: " img-responsive ", style: "width: 380px"  %>
+              </div>
+            </div>
+          </div>
+        </div>
+
     <% end %>
 <% else %>
 
     <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 20px">
 
-    <div style="margin-left: -25px; margin-right: -25px; margin-top: -100px; height: 400px; overflow: hidden; opacity: .7; ">
-      <%= image_tag "large.jpg", class: "imagenprincipal "  %>
+    <div style="margin-left: -25px; margin-right: -25px; margin-top: -150px; margin-bottom: 40px; height: 450px; overflow: hidden; ">
+      <%= image_tag "large.jpg", class: "imagenprincipal opacity"  %>
     </div>
-      <div style="margin-top: -200px; text-align: center">
-        <h1 style="color: #4c73a2; z-index: 2000">Bienvenido a ANCA</h1>
-      </div>
-      <div class="row" style="background-color: #4c73a2; border-radius: 5px; padding: 15px; margin-top: 110px ">
+    <div  style="margin-top: -200px; text-align: center; margin-bottom: 100px">
+      <h1 style="color: #050505; opacity: 1; font-size: 40px">Bienvenido a ANCA</h1>
+    </div>
+      <div class="row" style="background-color: #4c73a2; border-radius: 5px; ">
         <div class="col-md-10 col-md-offset-1" style="margin-top: 50px; text-align: center; color: #ffffff; margin-bottom: 50px">
           <p style="font-size: 24px; font-family: helvetica, verdana, arial, sans-serif"> ANCA es una Red Social dónde puedes:</p>
           <br/>

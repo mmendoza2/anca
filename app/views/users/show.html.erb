@@ -19,7 +19,7 @@
 
   <%	 else %>
       <div class="row" style="margin-top: 10px">
-        <h1 class="col-md-offset-4" style="margin-top: -15px">Reservations</h1>
+        <h1 class="col-md-offset-4" style="margin-top: -15px">Autos favoritos</h1>
         <% current_user.reservations.each do |x| %>
         <%	 end %>
 
@@ -30,7 +30,7 @@
 <div class="col-md-9 col-xs-12  ">
 
      <div class="row" style="margin-top: 10px">
-      <h1 class="col-md-offset-4" style="margin-top: -15px">Favorites Places</h1>
+      <h1 class="col-md-offset-4" style="margin-top: -15px">Lotes Favoritos</h1>
       <hr/>
       <ul>
       <%	current_user.followed_micrositios.each do |x|  %>

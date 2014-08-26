@@ -3,32 +3,17 @@
   <div class="hidden-xs" id="googlemaps">
     <div id="map-canvas" ></div>
   </div>
-    <div class="nav navbar-fixed-top visible-xs " style="margin-top: 60px" >
-      <div class="col-md-offset-2 col-md-5 col-sm-5 col-xs-12" style="margin-bottom: 20px; z-index: 1">
-        <div class="row" style="background-color: #593e73; border-radius: 5px; padding: 15px;  margin-top: -10px; ">
-          <div class="col-md-12 col-sm-12 hidden-xs">
-            <h1 style="color: #ffffff"><%=	@actividad.slug.capitalize %> </h1>
-          </div>
-          <div class="visible-xs col-xs-6">
-            <h1 style="color: #ffffff; font-size: 16px"><%=	@actividad.slug.capitalize %> </h1>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <div class="col-md-5 col-sm-8 col-xs-12">
 
-        <div class="col-md-12 col-sm-12 col-xs- transparent border hidden-xs" style="z-index: 10; margin-top: 20px" >
+        <div class="col-md-12 col-sm-12 col-xs-12 transparent border " style="z-index: 10; margin-top: 20px" >
             <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 20px;  z-index: 1">
               <div class="row" style="background-color: #593e73; border-radius: 5px; padding: 15px;  margin-top: -10px; ">
-                <div class="col-md-12 col-sm-12 hidden-xs">
-                  <h1 style="color: #ffffff; font-size: 18px"><%=	@actividad.slug.capitalize %> </h1>
-                </div>
+                  <h2 style="color: #ffffff; font-size: 18px"><%=	@actividad.slug.capitalize %> </h2>
 
               </div>
             </div>
         </div>
-
-        <div class="transparent visible-xs" style="height: 35px" ></div>
 
             <div class="col-md-12 col-sm-12 col-xs-12 border transparent" style="z-index: 10; margin-top: 10px" >
             <%	fbplace = ActiveSupport::JSON.decode(open("https://graph.facebook.com/search?q=#{@actividad.namefb},page&fields=cover,checkins,name,location,likes,category_list,picture.width(80)&type=place&center=#{current_user.lat},#{current_user.lng}&distance=15000&access_token=#{current_user.oauth_token}&limit=30").read) %>
