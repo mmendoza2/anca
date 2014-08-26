@@ -7,8 +7,8 @@ class ApplicationController < ActionController::Base
   before_filter :check_domain
 
   def check_domain
-    if Rails.env.production? and request.host.downcase != 'www.quickplace.me'
-      redirect_to request.protocol + 'www.quickplace.me' + request.fullpath, :status => 301
+    if Rails.env.production? and request.host.downcase != 'ancamx.herokuapp.com'
+      redirect_to request.protocol + 'ancamx.herokuapp.com' + request.fullpath, :status => 301
     end
   end
 
